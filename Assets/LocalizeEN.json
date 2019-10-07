@@ -1,0 +1,120 @@
+{
+    "Items": [
+        {
+            "key": "welcome",
+            "text": "Welcome!"
+        },
+        {
+            "key": "box",
+            "text": "Look inside"
+        },
+        {
+            "key": "no_friends",
+            "text": "I wish I... Had friends..."
+        },
+        {
+            "key": "kitchen",
+            "text": "Eat food"
+        },
+        {
+            "key": "bed",
+            "text": "Sleep"
+        },
+        {
+            "key": "computer",
+            "text": "Open browser"
+        },
+        {
+            "key": "pickup_cat",
+            "text": "Pick up"
+        },
+        {
+            "key": "pet_cat",
+            "text": "Pet"
+        },
+        {
+            "key": "bowl",
+            "text": "Fill bowl"
+        },
+        {
+            "key": "clean",
+            "text": "Clean"
+        },
+        {
+            "key": "shelter_title",
+            "text": "Cat Shelter Online"
+        },
+        {
+            "key": "shelter_desc",
+            "text": "We work to ensure that homeless cats have caring owners.\n(Service fee is 5$)"
+        },
+        {
+            "key": "money",
+            "text": "Money"
+        },
+        {
+            "key": "hunger",
+            "text": "HUNGER"
+        },
+        {
+            "key": "stress",
+            "text": "STRESS"
+        },
+        {
+            "key": "sleep",
+            "text": "SLEEP"
+        },
+        {
+            "key": "stress_0",
+            "text": "I wish I... Had friends..."
+        },
+        {
+            "key": "stress_1",
+            "text": "I'm so lonely..."
+        },
+        {
+            "key": "stress_2",
+            "text": "Oh god... I'm so alone..."
+        },
+        {
+            "key": "stress_3",
+            "text": "It's hard..."
+        },
+        {
+            "key": "stress_4",
+            "text": "I don’t have to have fun to have a good time... I guess"
+        },
+        {
+            "key": "stress_5",
+            "text": "AAAAAAAAAAAAAAAAAAARGH..."
+        },
+        {
+            "key": "stress_6",
+            "text": "*sobs*"
+        },
+        {
+            "key": "stress_7",
+            "text": "Why?.. Why me?"
+        },
+        {
+            "key": "stress_8",
+            "text": "I'm alone in this world."
+        },
+        {
+            "key": "stress_9",
+            "text": "I'm tired."
+        },
+        {
+            "key": "wine",
+            "text": "Drink"
+        },
+        {
+            "key": "day",
+            "text": "Day"
+        },
+        {
+            "key": "divorce",
+            "text": "He left me... I guess, nobody needs me in their life..."
+        }
+    ]
+}
