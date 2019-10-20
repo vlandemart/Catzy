@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
@@ -35,6 +36,8 @@ public class Player : MonoBehaviour
 	private Sprite playerCrazy;
 	public float DaysCounter;
 	public int WineCount;
+	[SerializeField]
+	private ParticleSystem starsParticle;
 
 	private void Awake()
 	{
@@ -53,6 +56,12 @@ public class Player : MonoBehaviour
 		DaysCounter = 0;
 	}
 
+	public void DrinkWine()
+	{
+		WineCount++;
+		starsParticle.Play();
+	}
+
 	private void Start()
 	{
 		myRB = GetComponent<Rigidbody2D>();
@@ -65,10 +74,13 @@ public class Player : MonoBehaviour
 	public void GetCrazy()
 	{
 		mySR.sprite = playerCrazy;
+		GotCrazy = true;
 	}
 
 	private void Update()
 	{
+		if (Input.GetKeyDown(KeyCode.R))
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		DaysCounter += Time.deltaTime;
 		JobUpdate();
 		HandleNeeds();
@@ -134,6 +146,8 @@ public class Player : MonoBehaviour
 			Computer.Instance.Close();
 		if (!HasInput)
 			return;
+		if (Input.GetKeyDown(KeyCode.Escape))
+			Application.Quit();
 		inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 		if (Input.GetKeyDown(KeyCode.E))
 			Interact();

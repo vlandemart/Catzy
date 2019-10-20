@@ -115,6 +115,10 @@
         {
             "key": "divorce",
             "text": "He left me... I guess, nobody needs me in their life..."
+        },
+        {
+            "key": "need_money",
+            "text": "I don't have enough money!"
         }
     ]
 }

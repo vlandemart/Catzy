@@ -251,12 +251,12 @@ public class Cat : MonoBehaviour, IInteractable
 			return;
 		heartParticle.Play();
 		PlaySound(CatManager.Instance.GetPurr());
-		player.Stress -= 5;
+		player.Stress -= 10;
 	}
 
 	public bool Interactable(Player player)
 	{
-		return (true);
+		return (hunger > 0);
 	}
 
 	public float Interact(Player player)

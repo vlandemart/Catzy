@@ -55,6 +55,14 @@ public class Computer : MonoBehaviour
 		this.gameObject.SetActive(false);
 	}
 
+	private void Update()
+	{
+		if (Player.Instance.Sleep >= 100f)
+			jobDescText.text = "You are too tired to work!";
+		else
+			jobDescText.text = "Free fast work! Online! Earn up to 6$!";
+	}
+
 	public void OpenPage(GameObject obj)
 	{
 		shelterObj.SetActive(false);

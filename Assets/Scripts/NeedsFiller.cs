@@ -23,24 +23,29 @@ public class NeedsFiller : MonoBehaviour, IInteractable
 
 	public bool Interactable(Player player)
 	{
-		if (moneyGain < 0 && player.Money + moneyGain < 0)
-			return (false);
 		return (true);
 	}
 
 	public float Interact(Player player)
 	{
+		if (moneyGain < 0 && player.Money + moneyGain < 0)
+		{
+			PlayerUI.Instance.StartThought("need_money");
+			return (0f);
+		}
 		return (interactTime);
 	}
 
 	public void OnInteractionComplete(Player player)
 	{
+		if (moneyGain < 0 && player.Money + moneyGain < 0)
+			return;
 		player.Money += moneyGain;
 		player.Stress += stressGain;
 		player.Hunger += hungerGain;
 		player.Sleep += sleepGain;
 		if (addsWine)
-			player.WineCount++;
+			player.DrinkWine();
 	}
 
 	public string InteractionName()
